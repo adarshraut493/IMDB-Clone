@@ -1,8 +1,8 @@
-.posterImage{
-    height: 600px;
+.posterImage {
+    height: 500px;
 }
 
-.posterImage > img {
+.posterImage>img {
     margin: auto;
     display: block;
     width: 100%;
@@ -18,10 +18,10 @@
     width: 100%;
     justify-content: flex-end;
     align-items: flex-start;
-    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
     opacity: 1;
     transition: opacity .3s;
-}   
+}
 
 .posterImage__overlay:hover {
     opacity: 1;
@@ -29,13 +29,13 @@
 
 .posterImage__title {
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 0.4rem;
     text-align: left;
 }
 
 .posterImage__runtime {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -49,5 +49,81 @@
     margin-bottom: 0.25rem;
     display: flex;
     text-align: left;
-    width: 50%;
+    width: 40%;
+}
+
+@media(max-width:760px) {
+
+
+    .posterImage {
+        height: 800px;
+    }
+
+    .posterImage__title {
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+        text-align: left;
+    }
+
+    .posterImage__runtime {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .posterImage__rating {
+        margin-left: 3rem;
+    }
+
+    .posterImage__description {
+        font-style: italic;
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+
+        width: 60%;
+    }
+
+}
+
+@media(max-width:375px) {
+    .posterImage {
+        height: 400px;
+    }
+
+    .posterImage__title {
+        font-size: 1.5rem;
+
+    }
+
+    .posterImage__overlay {
+        bottom: 160px;
+        width: 100%;
+        margin-left: -30px;
+        background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+    }
+
+    .posterImage__runtime {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .posterImage__description {
+        font-size: 0.4rem;
+        margin-bottom: 0.25rem;
+        width: 50%;
+    }
+
+    .custom-carousel .control-dots {
+
+        height: 200px;
+    }
+
+    .custom-carousel .control-prev,
+    .custom-carousel .control-next {
+        height: 50%;
+        top: calc(90% - 15px);
+    }
+
+    .custom-carousel {
+        height: 40vh;
+    }
 }
