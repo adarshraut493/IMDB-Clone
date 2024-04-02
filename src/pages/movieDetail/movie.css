@@ -154,5 +154,9 @@
         flex-direction: column;
         gap: 10px;
     }
+    .movie__production {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
