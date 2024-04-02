@@ -60,7 +60,6 @@
 
 .movie__genres {
     margin: 1.25rem 0;
-
 }
 
 .movie__genre {
@@ -134,7 +133,6 @@
     margin-bottom: 4rem;
 }
 
-
 .movie__productionComapany {
     width: 200px;
     margin: 2rem;
@@ -146,49 +144,15 @@
     align-items: center;
     justify-content: center;
 }
-
-@media(max-width:375px) {
-    .movie__poster {
-        width: 140px;
-    }
-
-    .movie__name {
-        font-size: 1.6rem;
-        font-weight: 600;
-    }
-
-    .movie__detailLeft {
-        margin-bottom: 100px;
-
-    }
-
-    .movie__detailRight {
-        margin-top: 250px;
-
-    }
-
-    .movie__backdrop {
-        width: 100%;
-        height: 300px;
-    }
-
-    .movie__genres {
+@media(max-width:770px){
+    .movie__detail{
         display: flex;
-        gap: 1.5px;
-        height: 20%;
-        width: 10%;
-    }
-    .movie__links{
         flex-direction: column;
-        gap: 4px;
     }
-    .movie__production{
+    .movie__links {
+        display: flex;
         flex-direction: column;
-       
+        gap: 10px;
     }
-    .movie__productionComapany{
-        height: 30%
-    }
-
 
 }

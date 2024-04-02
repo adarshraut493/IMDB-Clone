@@ -61,7 +61,7 @@
     margin-bottom: 0.25rem;
 }
 
-@media(max-width:375px) {
+@media(max-width:480px) {
     .cards{
        
         height: 200px;
